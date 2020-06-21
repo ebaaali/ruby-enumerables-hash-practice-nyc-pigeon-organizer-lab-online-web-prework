@@ -11,7 +11,9 @@ def nyc_pigeon_organizer(data)
         if pigeon_list[bird][attribute] == nil
           pigeon_list[bird][attribute] = []
         end
+        if !pigeon_list[bird][attribute].include?(detail)
          pigeon_list[bird][attribute].push(detail)
+       end
       end
     end
   end
